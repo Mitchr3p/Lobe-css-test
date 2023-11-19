@@ -19,15 +19,30 @@ button {
   border-radius: 25px;
   font-size: 1rem;
   font-weight: bold;
+  transition: background-color 1.5s, color 1s, transform 1.5s; 
+}
+
+button:hover {
+  background-color: white;
+  color: #04ddb2;
+  border: inset 2px solid #04ddb2;
+  transform: scale(1.2);
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(63, 63, 63);
+}
+
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Ensure it's above other content */
 }
 
 .navbar {
-  background-color:  white;
+  background-color:  rgb(255, 255, 255, 0.94);
   padding: 20px 0;
 }
 
@@ -41,7 +56,8 @@ a {
 
 .innav {
   display: flex;
-  gap: 40px;
+  margin-right: -100px;
+  gap: 30px;
 }
 
 .main {
@@ -49,6 +65,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
 }
 
 .main * {

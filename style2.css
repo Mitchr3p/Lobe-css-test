@@ -7,8 +7,11 @@ body {
 }
 
 img {
-  width: 300px;
+  max-width: 500px;
+  max-height: 300px;
   min-width: 300px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 button {
@@ -19,16 +22,32 @@ button {
   border-radius: 25px;
   font-size: 1rem;
   font-weight: bold;
+  transition: background-color 1s, color 0.8s, transform 1s; 
+}
+
+button:hover {
+  background-color: white;
+  color: #04ddb2;
+  border: inset 2px solid #04ddb2;
+  transform: scale(1.2);
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(63, 63, 63);
+}
+
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Ensure it's above other content */
 }
 
 .navbar {
-  background-color:  white;
   padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.94)/* Your background color */;
+
 }
 
 .navigation {
@@ -41,7 +60,18 @@ a {
 
 .innav {
   display: flex;
-  gap: 40px;
+  margin-right: -100px;
+  gap: 30px;
+}
+
+.innav a {
+  transition: color 0.5s, text-decoration 0.5s, transform 0.5s;
+}
+
+.innav a:hover {
+  color: #04ddb2;
+  text-decoration: underline;
+  transform: scale(1.1);
 }
 
 .main {
@@ -50,6 +80,7 @@ a {
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 60px;
 }
 
 .main * {
@@ -84,6 +115,7 @@ a {
 
 .sm2 {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1100px;
 }
@@ -91,10 +123,72 @@ a {
 .sm2 div {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 500px;
   word-wrap: break-word;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.2); 
+  transition: filter 1.3s transform 1.3s;
+}
+
+.sm2 .blur {
+  filter: blur(2px);
+}
+
+.sm2div:hover {
+  transform: scale(1.05);
+    .blur {
+      filter: blur(0);
+    }
+}
+
+.sm2 div h4 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.sm2 div p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: rgb(58, 57, 57);
+  margin: 0 10px 10px 10px;
+  line-height: 1.4rem;
 }
 
 .sm2 div * {
   margin: 0;
 }
+
+
+.foot {
+  max-width: 1100px;
+  margin: auto;
+  border-top: 1px solid rgb(119, 116, 116);
+}
+
+.infoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5vh;
+  height: 40vh;
+}
+
+.infoot p {
+  font-size: 1.2rem;
+}
+
+.infoot a {
+  font-size: 1rem;
+  color: rgb(58, 57, 57);
+}
+
+.infoot div {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoor .fola {
+  display: inline;
+}
+

@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navigation">
-        <a href="">Lobe</a>
-        <div class="innav">
-          <a href="">Examples</a>
-          <a href="">Tour</a>
+    <div class="navbar-container">
+      <nav class="navbar">
+        <div class="navigation">
+          <a href="">Lobe</a>
+          <div class="innav">
+            <a href="index.html">Tour</a>
+            <a href="blog.html">Blog</a>
+          </div>
+          <button>Download</button>
         </div>
-        <button>Download</button>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <section class="main">
       <div class="sm1">
         <div class="smp1">
@@ -29,16 +31,24 @@
         </p>
       </div>
       <div class="sm2">
-        <div>
-          <img src="/images/pexels-cottonbro-studio-5473956.jpg" alt="" />
+        <div class="sm2div">
+          <img
+            src="/images/pexels-cottonbro-studio-5473956.jpg"
+            alt=""
+            class="blur"
+          />
           <h4>Machine Learning Basics</h4>
           <p>
             Machine learning is a subset of artificial intelligence that focuses
             on the development of algorithms that enable computers to...
           </p>
         </div>
-        <div>
-          <img src="/images/pexels-tara-winstead-8386365.jpg" alt="" />
+        <div class="sm2div">
+          <img
+            src="/images/pexels-tara-winstead-8386365.jpg"
+            alt=""
+            class="blur"
+          />
           <h4>Natural Language Processing</h4>
           <p>
             Natural Language Processing (NLP) is a branch of AI that deals with
@@ -46,48 +56,72 @@
             It involves...
           </p>
         </div>
-        <div>
-          <img src="/images/pexels-tara-winstead-8849295.jpg" alt="" />
+        <div class="sm2div">
+          <img
+            src="/images/pexels-tara-winstead-8849295.jpg"
+            alt=""
+            class="blur"
+          />
           <h4>Computer Vision Applications</h4>
           <p>
             Computer vision is a field of AI that enables machines to interpret
             and make decisions based on visual data. It...
           </p>
         </div>
-        <div>
-          <img src="/images/pexels-tara-winstead-8386423.jpg" alt="" />
+        <div class="sm2div">
+          <img
+            src="/images/pexels-tara-winstead-8386423.jpg"
+            alt=""
+            class="blur"
+          />
           <h4>Deep Learning Techniques</h4>
           <p>
             Deep learning is a subfield of machine learning that involves neural
             networks with multiple layers (deep neural networks). It...
           </p>
         </div>
-        <div>
-          <img src="/images/pexels-cottonbro-studio-5473956.jpg" alt="" />
+        <div class="sm2div">
+          <img
+            src="/images/pexels-cottonbro-studio-5473956.jpg"
+            alt=""
+            class="blur"
+          />
           <h4>AI in Healthcare</h4>
           <p>
             Artificial intelligence is making significant strides in healthcare,
             from diagnosis and...
           </p>
         </div>
-        <div>
-          <img src="/images/pexels-tara-winstead-8386365.jpg" alt="" />
+        <div class="sm2div">
+          <img
+            src="/images/pexels-tara-winstead-8386365.jpg"
+            alt=""
+            class="blur"
+          />
           <h4>Robotics and Automation</h4>
           <p>
             AI plays a crucial role in robotics and automation, allowing
             machines to perform tasks autonomously. This...
           </p>
         </div>
-        <div>
-          <img src="/images/pexels-tara-winstead-8849295.jpg" alt="" />
+        <div class="sm2div">
+          <img
+            src="/images/pexels-tara-winstead-8849295.jpg"
+            alt=""
+            class="blur"
+          />
           <h4>Ethical Considerations in AI</h4>
           <p>
             The ethical implications of AI are an important aspect of its
             development. Issues such as bias in algorithms, privacy...
           </p>
         </div>
-        <div>
-          <img src="/images/pexels-tara-winstead-8386423.jpg" alt="" />
+        <div class="sm2div">
+          <img
+            src="/images/pexels-tara-winstead-8386423.jpg"
+            alt=""
+            class="blur"
+          />
           <h4>The Future of Artificial Intelligence</h4>
           <p>
             The future of AI holds exciting possibilities, including
@@ -96,5 +130,70 @@
         </div>
       </div>
     </section>
+    <footer class="foot">
+      <div class="infoot">
+        <div>
+          <p>lobe</p>
+          <p>
+            A product by Microsoft. <br />
+            All rights reserved. <br />
+            © Microsoft 2021
+          </p>
+        </div>
+        <div>
+          <p>About</p>
+          <a href="">Download</a>
+          <a href="">Overview</a>
+          <a href="">Examples</a>
+          <a href="">Blog</a>
+        </div>
+        <div>
+          <p>General</p>
+          <a href="">Notice</a>
+          <a href="">License</a>
+          <a href="">Press Inquiry</a>
+          <a href="">Press Images</a>
+        </div>
+        <div>
+          <p>Resources</p>
+          <a href="">Help</a>
+          <a href="">Tour</a>
+          <a href="">Contact</a>
+          <a href="">Privacy</a>
+        </div>
+        <div class="fola">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M512 240c0 114.9-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6C73.6 471.1 44.7 480 16 480c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4l0 0 0 0 0 0 0 0 .3-.3c.3-.3 .7-.7 1.3-1.4c1.1-1.2 2.8-3.1 4.9-5.7c4.1-5 9.6-12.4 15.2-21.6c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 576 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+            />
+          </svg>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
