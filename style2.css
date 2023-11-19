@@ -128,11 +128,11 @@ a {
   border-radius: 15px;
   text-align: center;
   box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.2); 
-  transition: filter 1.3s transform 1.3s;
+  transition: filter 1s, transform 1s;
 }
 
 .sm2 .blur {
-  filter: blur(2px);
+  filter: blur(2.2px);
 }
 
 .sm2div:hover {

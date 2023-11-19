@@ -9,6 +9,8 @@ body {
 img {
   width: 800px;
   min-width: 300px;
+  border-radius: 20px;
+  box-shadow: 3px 10px 20px 10px rgba(0, 0, 0, 0.4);
 }
 
 button {
@@ -19,7 +21,7 @@ button {
   border-radius: 25px;
   font-size: 1rem;
   font-weight: bold;
-  transition: background-color 1.5s, color 1s, transform 1.5s; 
+  transition: background-color 1s, color 0.8s, transform 1s; 
 }
 
 button:hover {
@@ -58,6 +60,16 @@ a {
   display: flex;
   margin-right: -100px;
   gap: 30px;
+}
+
+.innav a {
+  transition: color 0.5s, text-decoration 0.5s, transform 0.5s;
+}
+
+.innav a:hover {
+  color: #04ddb2;
+  text-decoration: underline;
+  transform: scale(1.1);
 }
 
 .main {
@@ -113,6 +125,14 @@ a {
   margin-bottom: 0;
 }
 
+.sm2 .blur {
+  transition: transform 1s;
+}
+
+.blur:hover  {
+  transform: scale(1.1);
+}
+
 .foot {
   max-width: 1100px;
   margin: auto;
@@ -134,6 +154,11 @@ a {
 .infoot a {
   font-size: 1rem;
   color: rgb(58, 57, 57);
+}
+
+.infoot a:hover {
+  color: #04ddb2;
+  transform: scale(1.1);
 }
 
 .infoot div {

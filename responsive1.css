@@ -1,0 +1,14 @@
+@media screen and (max-width: 767px) {
+  button:active {
+    background-color: white;
+    color: #04ddb2;
+    border: inset 2px solid #04ddb2;
+    transform: scale(1.2);
+  }
+
+  .navbar-container {
+    width: 100%;
+    position: relative;
+     /* Ensure it's above other content */
+  }
+}
