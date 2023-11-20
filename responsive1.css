@@ -78,7 +78,8 @@
   }
 
   .sm1 .smp2 {
-    font-size: 1.2rem;
+    word-break: normal;
+    font-size: 1.1rem;
     width: auto;
   }
 
@@ -90,28 +91,22 @@
     font-size: 2rem;
     font-weight: bold;
   }
-
+ 
   .foot .infoot {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    align-items: center;
-    margin: 5vh ;
-    height: auto;
+    gap: 10px;
   }
 
   .infoot div {
-    width: 150px;
     height: 175px;
-    margin: 2vh 0;
-  }
-
-  .infoot div a {
-    max-width: 20px;
+    width: auto;
   }
 
   .infoot .fola {
     display: inline;
-    width: auto;
+    margin-right: 20px;
+    height: 80px;
   }
 }
