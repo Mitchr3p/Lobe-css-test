@@ -1,33 +1,19 @@
 @media screen and (max-width: 767px) {
-  button:active {
-    background-color: white;
-    color: #04ddb2;
-    border: inset 2px solid #04ddb2;
-    transform: scale(1.2);
-  }
-
-  img {
-    max-width: 800px;
-    min-width: 300px;
-    border-radius: 20px;
-    box-shadow: 3px 10px 20px 10px rgba(0, 0, 0, 0.4);
-  }
-
   .navbar-container {
     width: 100%;
     position: relative;
      /* Ensure it's above other content */
   }
-
+  
   .navigation .innav {
     display: none;
   }
-
+  
   .navbar .dropdown-container {
     position: relative;
     display: inline-block;
   }
-
+  
   .dropdown-content {
     display: none;
     position: absolute;
@@ -37,7 +23,7 @@
     z-index: 1;
     text-align: center;
   }
-
+  
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -45,17 +31,17 @@
     display: block;
     transition: all 0.5s;
   }
-
+  
   .dropdown-content a:hover {
     background-color: rgba(4, 221, 178, 0.74);
   }
-
+  
   .dropdown-container:hover .dropdown-content {
     display: block;
     transform: translateX(-100px);
     padding: 20px 0;
   }
-
+  
   .main {
     margin-top: 30px;
   }
@@ -82,13 +68,29 @@
     width: auto;
   }
 
-  .blur {
-    max-width: 400px;
-  }
-
   .sm2 h1 {
     font-size: 2rem;
     font-weight: bold;
+  }
+
+  .blur {
+    width: auto;
+  }
+
+  .sm2 {
+    margin-right: 12vh;
+    margin-left: 12vh;
+  }
+  
+  .sm2 .blur {
+    filter: blur(0);
+  }
+
+  .sm2div:hover {
+    transform: scale(1.05);
+      .blur {
+        filter: blur(0);
+      }
   }
 
   .foot .infoot {
@@ -114,4 +116,5 @@
     display: inline;
     width: auto;
   }
+
 }

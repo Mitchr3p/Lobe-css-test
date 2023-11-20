@@ -74,6 +74,10 @@ a {
   transform: scale(1.1);
 }
 
+.dropdown-container {
+  display: none;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -109,6 +113,7 @@ a {
   color: #04ddb2;
 }
 .sm1 .smp2 {
+  word-break: break-all;
   font-size: 1.4rem;
   width: 600px;
 }
@@ -123,6 +128,7 @@ a {
 .sm2 div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 500px;
   word-wrap: break-word;
   border-radius: 15px;
@@ -181,6 +187,11 @@ a {
 .infoot a {
   font-size: 1rem;
   color: rgb(58, 57, 57);
+}
+
+.infoot a:hover {
+  color: #04ddb2;
+  transform: scale(1.1);
 }
 
 .infoot div {
